@@ -40,7 +40,7 @@ def page2():
     m3 = pd.read_csv("movie1.csv", low_memory=False)
     d1 = pd.concat([m1, m2,m3])
     d2 = pd.read_csv("anime.csv", low_memory=False)
-    d3 = pd.read_csv("TV Series.csv", low_memory=False)
+    d3 = pd.read_csv("TV_Series.csv", low_memory=False)
 
     d1 = d1.drop_duplicates()
     d2 = d2.drop_duplicates()
