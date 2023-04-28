@@ -2,10 +2,6 @@ import streamlit as st
 import pandas as pd
 import time
 import ast
-import requests
-import matplotlib.pyplot as plt
-import plotly.express as px
-import seaborn as sns
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import MultiLabelBinarizer, StandardScaler
 from sklearn.feature_extraction.text import CountVectorizer
