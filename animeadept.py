@@ -39,7 +39,10 @@ def page1():
 def page2():
 
     # Load the input datasets
-    d1 = pd.read_csv("movies_metadata.csv", low_memory=False)
+    m1 = pd.read_csv("movie1.csv", low_memory=False)
+    m2 = pd.read_csv("movie1.csv", low_memory=False)
+    m3 = pd.read_csv("movie1.csv", low_memory=False)
+    d1 = pd.concat([m1, m2,m3])
     d2 = pd.read_csv("anime.csv", low_memory=False)
     d3 = pd.read_csv("TV Series.csv", low_memory=False)
 
