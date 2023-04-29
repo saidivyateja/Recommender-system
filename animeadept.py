@@ -137,7 +137,7 @@ def page2():
     elif dataset == 'Anime':
         data = d2
         features = ['title', 'Score', 'genre', 'Type', 'Aired', 'Premiered', 'Source', 'Ranked', 'Popularity', 'Members', 'Favorites', 'Watching', 'Completed', 'On-Hold', 'Dropped', 'Plan to Watch', 'popularity_score']
-        input_movie = st.selectbox('Enter Movie Name',data['title'])
+        input_movie = st.selectbox('Enter Anime Name',data['title'])
         N = st.sidebar.slider('Select Number of Recommendations', 0, 100, 10)
         if st.button('Get Recommendations'):
             recommendations = recommend(features,data,input_movie)
@@ -156,7 +156,7 @@ def page2():
     elif dataset == 'Tv Series':
         data = d3
         features = ['title', 'Release Year', 'Runtime', 'genre', 'Rating', 'Cast', 'Synopsis']
-        input_movie = st.selectbox('Enter Movie Name',data['title'])
+        input_movie = st.selectbox('Enter a TV shows',data['title'])
         N = st.sidebar.slider('Select Number of Recommendations', 0, 100, 10)
         if st.button('Get Recommendations'):
             recommendations = recommend(features,data,input_movie)
