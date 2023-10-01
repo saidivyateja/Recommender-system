@@ -36,8 +36,8 @@ def page2():
 
     # Load the input datasets
     m1 = pd.read_csv("movie1.csv", low_memory=False)
-    m2 = pd.read_csv("movie1.csv", low_memory=False)
-    m3 = pd.read_csv("movie1.csv", low_memory=False)
+    m2 = pd.read_csv("movie2.csv", low_memory=False)
+    m3 = pd.read_csv("movie3.csv", low_memory=False)
     d1 = pd.concat([m1, m2,m3])
     d2 = pd.read_csv("anime.csv", low_memory=False)
     d3 = pd.read_csv("TV_Series.csv", low_memory=False)
